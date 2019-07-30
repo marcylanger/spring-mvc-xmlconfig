@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping(value="funcionarios")
 public class FuncionarioController {
 
-	@RequestMapping(value="/listar", method=RequestMethod.GET)
+	@RequestMapping(value="/")
 	public ModelAndView listarFuncionarios() {
 		ModelAndView view = new ModelAndView("listarfuncionarios");
 		System.out.println("Listar");
